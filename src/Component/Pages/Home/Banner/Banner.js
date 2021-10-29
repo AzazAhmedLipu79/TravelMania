@@ -30,10 +30,10 @@ const Banner = () => {
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-pgHv--BEn2mxrJRI2sOn1YzAKgKeb0U3w&usqp=CAU"
             className="img-fluid border rounded-3 shadow-lg mb-4"
-            alt="Example image"
             width="700"
             height="500"
             loading="lazy"
+            alt="Travel Mania"
           />
         </div>
       </div>
