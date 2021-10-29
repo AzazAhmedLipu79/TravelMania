@@ -54,6 +54,7 @@ const GetStarted = () => {
             id="submit"
             value="connection"
           >
+            <span className="text-secondary me-1 bi bi-google"></span>
             Connection
           </button>
           <p className="option">

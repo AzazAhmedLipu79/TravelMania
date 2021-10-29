@@ -6,6 +6,8 @@ import "./Header.css";
 
 const Header = () => {
   const { user, logout } = useAuth();
+  const { displayName, photoURL } = user;
+
   return (
     <div id="header" className="py-2 pt-4">
       <Navbar fixed="top" bg="light" expand="lg">
@@ -29,6 +31,22 @@ const Header = () => {
                 Link
               </Nav.Link>
             </Nav>
+            <div class="mx-5 d-flex align-items-center justify-content-center">
+              {/* {console.log(user)} */}
+              {user.email ? (
+                <img
+                  src={photoURL}
+                  className="rounded-circle"
+                  width="32"
+                  height="32"
+                  alt=""
+                />
+              ) : (
+                ""
+              )}
+
+              <h6 className="ms-2">{displayName}</h6>
+            </div>
 
             {user.email ? (
               <Button onClick={logout} variant="outline-danger">

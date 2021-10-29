@@ -1,0 +1,26 @@
+[
+    {
+        "key" : "1",
+        "title": "Title 1",
+        "description" : "Description 1",
+        "image" : "https://bootstrapmade.com/demo/templates/FlexStart/assets/img/features-3.png"
+    },
+    {
+        "key" : "2",
+        "title": "Title 2",
+        "description" : "Description 2",
+        "image" : "https://bootstrapmade.com/demo/templates/FlexStart/assets/img/features-1.png"
+    },
+    {
+        "key" : "3",
+        "title": "Title 3",
+        "description" : "Description 3",
+        "image" : "https://bootstrapmade.com/demo/templates/FlexStart/assets/img/features-2.png"
+    },
+    {
+        "key" : "4",
+        "title": "Title 4",
+        "description" : "Description 4",
+        "image" : "https://bootstrapmade.com/demo/templates/FlexStart/assets/img/features-4.png"
+    }
+]
