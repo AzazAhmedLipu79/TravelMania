@@ -4,16 +4,20 @@ import Banner from "./Component/Pages/Home/Banner/Banner";
 import Header from "./Component/Shared/Header/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GetStarted from "./Component/Pages/GetStarted/GetStarted";
+import AuthProvider from "./Context/AuthProvider";
+import PrivateRoute from "./Component/Shared/PrivateRoute/PrivateRoute";
+import Speciality from "./Component/Pages/Home/Speciality/Speciality";
 
 function App() {
   return (
-    <div className="App">
+    <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
-          <Route exact path="/">
+          <PrivateRoute exact path="/">
             <Banner></Banner>
-          </Route>
+            <Speciality></Speciality>
+          </PrivateRoute>
           <Route exact path="/GetStarted">
             <GetStarted></GetStarted>
           </Route>
@@ -24,7 +28,7 @@ function App() {
 
         <h2>Travel Mania</h2>
       </Router>
-    </div>
+    </AuthProvider>
   );
 }
 
