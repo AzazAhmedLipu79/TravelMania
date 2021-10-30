@@ -5,16 +5,16 @@ const Speciality = () => {
   return (
     <div className="py-5 bg-light">
       {/* <!-- ======= Services Section ======= --> */}
-      <section id="services" class="services section-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="section-title">
+      <section id="services" className="services section-bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="section-title">
                 <h2 className="  shadow w-50 rounded-pill p-1  px-3 text-center  ">
                   Speciality
                 </h2>
                 <p className="py-4">
-                  <span class="fw-bold fs-3 text-success"> Specially</span>{" "}
+                  <span className="fw-bold fs-3 text-success"> Specially</span>{" "}
                   service travel world and the rest of the world with one foot
                   off his ass. The last thing I want is to write someone off as
                   a jerk. At least the last of the "no-knock" signs that are
@@ -22,12 +22,12 @@ const Speciality = () => {
                 </p>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="row">
-                <div class="col-md-6 d-flex align-items-stretch">
-                  <div class="icon-box">
-                    <div class="icon">
-                      <i class="bi bi-fingerprint"></i>
+            <div className="col-lg-8">
+              <div className="row">
+                <div className="col-md-6 d-flex align-items-stretch">
+                  <div className="icon-box">
+                    <div className="icon">
+                      <i className="bi bi-fingerprint"></i>
                     </div>
                     <h4>
                       <a href="/">Like a Family</a>
@@ -39,10 +39,10 @@ const Speciality = () => {
                   </div>
                 </div>
 
-                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                  <div class="icon-box">
-                    <div class="icon">
-                      <i class="bi bi-shield-shaded"></i>
+                <div className="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                  <div className="icon-box">
+                    <div className="icon">
+                      <i className="bi bi-shield-shaded"></i>
                     </div>
                     <h4>
                       <a href="/">100% Security</a>
@@ -54,10 +54,10 @@ const Speciality = () => {
                   </div>
                 </div>
 
-                <div class="col-md-6 d-flex align-items-stretch mt-4">
-                  <div class="icon-box">
-                    <div class="icon">
-                      <i class="bi bi-heart-half"></i>
+                <div className="col-md-6 d-flex align-items-stretch mt-4">
+                  <div className="icon-box">
+                    <div className="icon">
+                      <i className="bi bi-heart-half"></i>
                     </div>
                     <h4>
                       <a href="/">Loving Nature </a>
@@ -69,10 +69,10 @@ const Speciality = () => {
                   </div>
                 </div>
 
-                <div class="col-md-6 d-flex align-items-stretch mt-4">
-                  <div class="icon-box">
-                    <div class="icon">
-                      <i class="bi bi-globe2"></i>
+                <div className="col-md-6 d-flex align-items-stretch mt-4">
+                  <div className="icon-box">
+                    <div className="icon">
+                      <i className="bi bi-globe2"></i>
                     </div>
                     <h4>
                       <a href="/">WorldOver Travel Station</a>

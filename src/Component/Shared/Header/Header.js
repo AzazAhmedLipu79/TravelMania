@@ -13,8 +13,11 @@ const Header = () => {
       <Navbar fixed="top" bg="light" expand="lg">
         <Container>
           <h1 className="logo">
-            <Navbar.Brand href="/">
-              <span>Travel Mania</span>
+            <Navbar.Brand>
+              <Link to="/">
+                {" "}
+                <span>Travel Mania</span>
+              </Link>
             </Navbar.Brand>
           </h1>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -24,14 +27,20 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
+              <Nav.Link>
+                {" "}
+                <Link to="/Services">
+                  {" "}
+                  <span>Services</span>
+                </Link>{" "}
+              </Nav.Link>
               <Nav.Link href="#action2">Link</Nav.Link>
 
               <Nav.Link href="#" disabled>
                 Link
               </Nav.Link>
             </Nav>
-            <div class="mx-5 d-flex align-items-center justify-content-center">
+            <div className="mx-5 d-flex align-items-center justify-content-center">
               {/* {console.log(user)} */}
               {user.email ? (
                 <img
