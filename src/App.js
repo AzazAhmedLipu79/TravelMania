@@ -12,6 +12,7 @@ import Services from "./Component/Pages/Services/Services";
 import MyJourney from "./Component/Pages/MyJourney/MyJourney";
 import AddNewService from "./Component/Pages/AddNewService/AddNewService";
 import ManageAllJourney from "./Component/Pages/ManageAllJourney/ManageAllJourney";
+import Review from "./Component/Pages/Home/Review/Review";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Banner></Banner>
             <Speciality></Speciality>
             <Services></Services>
+            <Review></Review>
             <Footer></Footer>
           </Route>
           <Route exact path="/Services">

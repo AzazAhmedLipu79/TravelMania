@@ -12,12 +12,14 @@ const AddNewService = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/services", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Added successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://travel-mania-phero.herokuapp.com/services", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Added successfully");
+          reset();
+        }
+      });
   };
 
   // console.log(watch("example"));
