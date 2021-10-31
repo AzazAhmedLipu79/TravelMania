@@ -9,6 +9,9 @@ import PrivateRoute from "./Component/Shared/PrivateRoute/PrivateRoute";
 import Speciality from "./Component/Pages/Home/Speciality/Speciality";
 import Footer from "./Component/Shared/Footer/Footer";
 import Services from "./Component/Pages/Services/Services";
+import MyJourney from "./Component/Pages/MyJourney/MyJourney";
+import AddNewService from "./Component/Pages/AddNewService/AddNewService";
+import ManageAllJourney from "./Component/Pages/ManageAllJourney/ManageAllJourney";
 
 function App() {
   return (
@@ -16,15 +19,27 @@ function App() {
       <Router>
         <Header></Header>
         <Switch>
-          <PrivateRoute exact path="/">
+          <Route exact path="/">
             <Banner></Banner>
             <Speciality></Speciality>
             <Services></Services>
             <Footer></Footer>
-          </PrivateRoute>
+          </Route>
           <Route exact path="/Services">
             <Services></Services>
           </Route>
+          <PrivateRoute exact path="/MyJourney">
+            <MyJourney></MyJourney>
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/ManageAllJourney">
+            <ManageAllJourney></ManageAllJourney>
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/AddNewService">
+            <AddNewService></AddNewService>
+          </PrivateRoute>
+
           <Route exact path="/GetStarted">
             <GetStarted></GetStarted>
           </Route>

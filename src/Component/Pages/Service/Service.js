@@ -2,12 +2,12 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 
 const Service = (props) => {
-  const { key, image, name, description } = props.service || {};
+  const { image, title, description } = props.service || {};
   return (
     <Card className="bg-light g-2">
-      <Card.Img variant="top" src={image} />
+      <Card.Img className="p-1 rounded bg-light" variant="top" src={image} />
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
+        <Card.Title>{title}</Card.Title>
 
         <Card.Text>
           {description}...{" "}
@@ -18,7 +18,8 @@ const Service = (props) => {
         <small className="text-muted">
           {" "}
           <Button variant="outline-success">
-            Let's Start <i class="bi bi-bookmark-dash-fill"></i>
+            Let's Start
+            <i class="bi bi-bookmark-dash-fill"></i>
           </Button>
         </small>
       </Card.Footer>

@@ -34,10 +34,20 @@ const Header = () => {
                   <span>Services</span>
                 </Link>{" "}
               </Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-
-              <Nav.Link href="#" disabled>
-                Link
+              <Nav.Link>
+                <Link to="/MyJourney">
+                  <span>My Journey</span>
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/ManageAllJourney">
+                  <span>Manage All Journey</span>
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/AddNewService">
+                  <span>Add New Service</span>
+                </Link>
               </Nav.Link>
             </Nav>
             <div className="mx-5 d-flex align-items-center justify-content-center">
