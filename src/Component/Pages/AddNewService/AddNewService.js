@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./AddNewService.css";
-import axios from "axios";
+
 const AddNewService = () => {
   const {
     register,
@@ -12,14 +12,13 @@ const AddNewService = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios
-      .post("https://travel-mania-phero.herokuapp.com/services", data)
-      .then((res) => {
-        if (res.data.insertedId) {
-          alert("Added successfully");
-          reset();
-        }
-      });
+
+    fetch("http://localhost:5000/addService", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    reset();
   };
 
   // console.log(watch("example"));

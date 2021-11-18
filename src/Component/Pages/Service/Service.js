@@ -1,8 +1,10 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Service = (props) => {
-  const { image, title, description } = props.service || {};
+  const { image, title, description, _id } = props.service || {};
+  // console.log(props.service);
   return (
     <Card className="bg-light g-2">
       <Card.Img className="p-1 rounded bg-light" variant="top" src={image} />
@@ -17,10 +19,12 @@ const Service = (props) => {
       <Card.Footer>
         <small className="text-muted">
           {" "}
-          <Button variant="outline-success">
-            Let's Start
-            <i class="bi bi-bookmark-dash-fill"></i>
-          </Button>
+          <Link to={`/Booking/${_id}`}>
+            <Button variant="outline-success">
+              Let's Start
+              <i class="bi bi-bookmark-dash-fill"></i>
+            </Button>
+          </Link>
         </small>
       </Card.Footer>
     </Card>

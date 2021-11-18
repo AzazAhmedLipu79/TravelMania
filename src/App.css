@@ -1,7 +1,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+::selection {
+  background-color: #05c592;
+  color: #fff;
+}
 body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;

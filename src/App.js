@@ -13,6 +13,7 @@ import MyJourney from "./Component/Pages/MyJourney/MyJourney";
 import AddNewService from "./Component/Pages/AddNewService/AddNewService";
 import ManageAllJourney from "./Component/Pages/ManageAllJourney/ManageAllJourney";
 import Review from "./Component/Pages/Home/Review/Review";
+import Booking from "./Component/Pages/Booking/Booking";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <PrivateRoute exact path="/MyJourney">
             <MyJourney></MyJourney>
+          </PrivateRoute>
+          <PrivateRoute exact path="/Booking/:bookingId">
+            <Booking></Booking>
           </PrivateRoute>
 
           <PrivateRoute exact path="/ManageAllJourney">
