@@ -13,7 +13,7 @@ const AddNewService = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    fetch("http://localhost:5000/addService", {
+    fetch("https://fast-chamber-49643.herokuapp.com/addService", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
